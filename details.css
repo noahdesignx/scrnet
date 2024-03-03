@@ -1,0 +1,1190 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    min-height: 650px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.844),rgba(255, 255, 255, 0.832)), url(images/momBeautiful2.jpeg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.fa-bars {
+    color: rgb(102, 46, 224);
+    cursor: pointer;
+    padding-right: 25px;
+    font-size: 25px;
+}
+.fa-times {
+    color: rgb(255, 255, 255);
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-bottom: 40px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.nav .fa {
+    display: none;
+}
+.nav img {
+    width: 150px;
+    padding: 25px;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    max-height: 100px;
+    position: relative;
+}
+.links {
+    flex: 1;
+    text-align: left;
+}
+.links ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 16px 24px;
+    position: relative;
+}
+.links ul li a{
+    color: rgb(102, 46, 224);
+    text-decoration: none;
+    font-size: 20px;
+    font-family: serif;
+}
+.links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(102, 46, 224);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.links ul li:hover::after {
+    width: 100%;
+}
+
+.hero {
+    padding-left: 50px;
+    text-align: left;
+    animation: headerEffect 1s linear;
+   
+}
+.hero h1 {
+    font-size: 50px;
+    color: rgb(102, 46, 224);
+    padding-top: 50px;
+    font-family: sans-serif;
+}
+.goal {
+    font-size: 35px;
+    color: rgb(102, 46, 224);
+    padding-top: 25px;
+    font-family: serif;
+    padding-bottom: 25px;
+}
+.phone {
+    font-size: 35px;
+    color: rgb(102, 46, 224);
+    font-family: serif;
+    padding-bottom: 50px;
+}
+.help {
+    font-size: 30px;
+    font-family: serif;
+    color: rgb(102, 46, 224);
+    text-decoration: none;
+    border: 2px solid rgb(102, 46, 224);
+    padding: 12px 34px;
+    background: transparent;
+    transition: 0.5s;
+}
+.help:hover {
+    transition: 0.5s;
+    color: white;
+    background-color: rgba(102, 46, 224);
+}
+.hero h2 {
+    font-size: 20px;
+    color: rgb(102, 46, 224);
+    padding-top: 50px;
+    font-family: serif;
+    font-weight: 1;
+    font-style: italic;
+    padding-top: 50px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.statements {
+    position: relative;
+    padding-top: 25px;
+}
+.combo {
+    display: flex;
+}
+.mission, .vision, .history {
+    border: 2px solid rgb(102, 46, 224);
+    border-radius: 100px;
+    margin: 25px;
+}
+.mission h1, .vision h1, .history h1 {
+    text-align: center;
+    color:rgb(102, 46, 224);
+    margin: 20px;
+    font-family: sans-serif;
+    font-size: 25px;
+}
+.mission p, .vision p, .history p {
+    text-align: center;
+    color:rgb(102, 46, 224);
+    margin: 30px;
+    font-family: serif;
+    font-size: 20px;
+}
+.history p a {
+    color: rgb(102, 46, 224);
+}
+.history p a:hover {
+    color: rgba(220, 13, 154, 0.81);
+}
+
+
+/*Footer*/
+.footer {
+    background-image: linear-gradient(360deg,rgba(102, 46, 224),rgba(121, 87, 194, 0.812));
+    transform: translateY(50px);
+}
+.terms h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    padding-top: 50px;
+    font-weight: 1;
+    padding-bottom: 25px;
+}
+.terms h1 a {
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+}
+.terms h1 a:hover {
+    color: rgba(220, 13, 154, 0.81);
+}
+.socials ul li i {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    letter-spacing: 50px;
+}
+.fa-envelope:hover {
+    scale: 1.3;
+    transition: 0.5s;
+}
+.fa-youtube-play {
+    scale: 1;
+    transition: 0.5s;
+}
+.fa-facebook-official {
+    scale: 1;
+    transition: 0.5s;
+}
+.fa-twitter {
+    scale: 1;
+    transition: 0.5s;
+}
+.fa-envelope {
+    scale: 1;
+    transition: 0.5s;
+}
+.fa-facebook-official:hover {
+    scale: 1.3;
+    transition: 0.5s;
+}
+.fa-youtube-play:hover {
+    scale: 1.3;
+    transition: 0.5s;
+}
+.fa-twitter:hover {
+    scale: 1.3;
+    transition: 0.5s;
+}
+.socials ul{
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+.socials ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+.address h1 {
+    text-align: center;
+    font-size: 15px;
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+    padding-top: 50px;
+    margin: auto;
+}
+.socials h1 {
+    text-align: center;
+    font-size: 15px;
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+    padding-top: 25px;
+    margin: auto;
+}
+
+@media(max-width: 1100px) {
+    .links {
+        position: fixed;
+        background: rgb(102, 46, 224);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+     
+    }
+    .links ul li {
+        display: block;
+    }
+    .links ul li a {
+        color: white;
+    }
+   .nav .fa {
+    display: block;
+   }
+}
+@media(max-width:1100px) {
+    .hero {
+        text-align: center;
+        padding-left: 0;
+    }
+    .hero p {
+        font-size: 30px;
+    }
+    .phone {
+        font-size: 30px;
+    }
+    .combo {
+        display: block;
+    }
+    .header {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.844),rgba(255, 255, 255, 0.679)), url(images/momBeautiful.jpeg);
+    }
+    .yanira {
+        flex-direction: column;
+    }
+    .network {
+        flex-direction: column;
+    }
+    .heart2 {
+        display: none;
+    }
+    .network i {
+        display: none;
+    }
+    .legal {
+        flex-direction: column;
+    }
+    .staff {
+        flex-direction: column;
+    }
+}
+.privacy {
+    padding: 25px;
+    padding-top: 55px;
+}
+.privacy p {
+    font-family: serif;
+    color: rgb(102, 46, 224);
+    font-size: 15px;
+}
+.privacy h1 {
+    font-family: sans-serif;
+    color: rgb(102, 46, 224);
+    font-size: 20px;
+}
+.termsOfUse {
+    padding: 25px;
+    padding-top: 55px;
+}
+.termsOfUse p {
+    font-family: serif;
+    color: rgb(102, 46, 224);
+    font-size: 15px;
+}
+.termsOfUse h1 {
+    font-family: sans-serif;
+    color: rgb(102, 46, 224);
+    font-size: 20px;
+}
+
+/*About*/
+
+.about {
+    min-height: 400px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.844),rgba(255, 255, 255, 0.832)), url(images/yanira1.jpeg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about h1 {
+    font-family: sans-serif;
+    color: rgb(102, 46, 224);
+    font-size: 50px;
+}
+.aboutTitle {
+    color: rgb(102, 46, 224);
+    text-align: center;
+    margin: 5px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-size: 40px;
+    font-family: sans-serif;
+}
+.yanira {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.yanira img {
+    width: 300px;
+    display: flex;
+    align-self: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.yanira h1 {
+    border: 2px solid rgb(102, 46, 224);
+    font-size: 20px;
+    font-style: italic;
+    font-family: serif;
+    color: rgb(102, 46, 224);
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    border-radius: 100px;
+    padding: 36px 36px;
+}
+.fa-heart {
+    color: rgb(102, 46, 224);
+    justify-content: center;
+    align-self: center;
+    font-size: 50px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 25px;
+    padding-top: 10px;
+
+}
+.network {
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.network img {
+    width: 300px;
+    scale: 0.75;
+    align-self: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.network h1 {
+    border: 2px solid rgb(102, 46, 224);
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: serif;
+    color: rgb(102, 46, 224);
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    border-radius: 100px;
+    padding: 36px;
+}
+.network i {
+    opacity: 0%;
+}
+.legal {
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.legal div {
+    border: 2px solid rgb(102, 46, 224);
+    padding: 36px 36px;
+    height: 250px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+    
+}
+.legal h1 {
+    font-size: 20px;
+    font-family: sans-serif;
+    color: rgb(102, 46, 224);
+}
+.legal p {
+    font-family: serif;
+    color: rgb(102, 46, 224);
+    font-size: 15px;
+}
+.legal i {
+    color: rgb(102, 46, 224);
+    font-size: 25px;
+    transition: 0.5s;
+}
+.legal i:hover {
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+.staff {
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.CEO-IMG {
+    border: 2px solid rgb(102, 46, 224);
+    padding: 36px 36px;
+    height: 250px;
+    width: 250px;
+    margin: 20px;
+    background-image: url(images/ceo.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.CEO-NAME, .CFO-NAME, .EXEC-NAME {
+    border: 2px solid rgb(102, 46, 224);
+    padding: 36px 36px;
+    height: 250px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+}
+.CEO-NAME h1, .CFO-NAME h1, .EXEC-NAME h1 {
+    font-size: 25px;
+    font-family: sans-serif;
+    color: rgb(102, 46, 224);
+}
+.CEO-NAME p, .CFO-NAME p, .EXEC-NAME p {
+    font-family: serif;
+    color: rgb(102, 46, 224);
+    font-size: 20px;
+}
+.CFO-IMG {
+    border: 2px solid rgb(102, 46, 224);
+    padding: 36px 36px;
+    height: 250px;
+    width: 250px;
+    margin: 20px;
+    background-image: url("");
+    background-size: cover;
+    background-position: center;
+}
+.EXEC-IMG {
+    border: 2px solid rgb(102, 46, 224);
+    padding: 36px 36px;
+    height: 250px;
+    width: 250px;
+    margin: 20px;
+    background-image: url("");
+    background-size: cover;
+    background-position: center;
+}
+.grants {
+    min-height: 400px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.844),rgba(255, 255, 255, 0.832)), url(images/signing.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.grants h1 {
+    font-family: sans-serif;
+    color: rgb(102, 46, 224);
+    font-size: 50px;
+}
+.eligibility {
+    font-family: sans-serif;
+    color: rgb(102, 46, 224);
+    margin: 15px;
+    text-align: center;
+    border: 2px solid rgb(102, 46, 224);
+    border-radius: 100px;
+    padding: 36px 36px;
+    font-family: serif;
+    transition: 0.5s;
+}
+.eligibility h1{
+    font-size: 25px;
+    font-weight: lighter;
+}
+.fa-envelope-o {
+    font-size: 50px;
+    color: rgb(102, 46, 224);
+    transition: 0.5s;
+}
+.fa-envelope-o:hover {
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+.resources {
+    min-height: 400px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.844),rgba(255, 255, 255, 0.832)), url(images/emergency.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.resources h1 {
+    font-family: sans-serif;
+    color: rgb(102, 46, 224);
+    font-size: 50px;
+}
+.explain {
+    display: flex;
+    color: rgb(102, 46, 224);
+    margin: 25px;
+    justify-content: space-between;
+    align-items: center;
+}
+.cancerinfo h1 {
+    font-size: 25px;
+    font-family: sans-serif;
+}
+.cancerinfo p {
+    font-size: 20px;
+    font-family: serif;
+}
+.explain img {
+    width: 350px;
+    height: 300px;
+    margin: 25px;
+}
+.cancerinfo {
+    text-align: center;
+    border: 2px solid rgb(102, 46, 224);
+    padding: 36px 36px;
+    margin: auto;
+}
+.explain2 {
+    display: flex;
+    color: rgb(102, 46, 224);
+    margin: 25px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.explain2 img {
+    width: 350px;
+    height: 300px;
+    margin: 25px;
+}
+.align-left .cancerinfo {
+    text-align: left;
+}
+@media (max-width:1200px) {
+    .explain2 {
+        flex-direction: column-reverse;
+    }
+    .explain2 div {
+        text-align: center;
+    }
+    .explain {
+        flex-direction: column;
+    }
+    .explain div {
+        text-align: center;
+    }
+    .banks {
+        flex-direction: column;
+    }
+    .align-left .cancerinfo {
+        text-align: center;
+    }
+    .charities .debbies {
+        width: 200px;
+    }
+    .charities .nsfc {
+        width: 250px;
+    }
+    .charities .cccn {
+        width: 400px;
+    }
+}
+.charities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    scale: 0.8;
+}
+.charities img {
+    transition: 0.5s;
+}
+.charities img:hover {
+    scale: 1.25;
+    transition: 0.5s;
+}
+.nsfc {
+    width: 300px;
+    margin: 100px;
+}
+.debbies {
+    width: 200px;
+}
+.MEDIA-IMG {
+    border: 2px solid rgb(102, 46, 224);
+    padding: 36px 36px;
+    height: 250px;
+    width: 200px;
+    margin: 20px;
+    background-image: url("images/award.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.MEDIA-IMG2 {
+    border: 2px solid rgb(102, 46, 224);
+    padding: 36px 36px;
+    height: 250px;
+    width: 200px;
+    margin: 20px;
+    background-image: url("images/thebeat.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.MEDIA-IMG3 {
+    border: 2px solid rgb(102, 46, 224);
+    padding: 36px 36px;
+    height: 250px;
+    width: 200px;
+    margin: 20px;
+    background-image: url("images/abc.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.donateTitle {
+    min-height: 400px;
+    background-color: rgb(102, 46, 224);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.donateTitle h1 {
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+}
+.donateTitle .fa-heart {
+    color: white;
+    font-size: 50px;
+    animation: beat 3s infinite;
+}
+@keyframes beat {
+    0% {
+        scale: 1;
+    }
+    50% {
+        scale: 1.5;
+    }
+    100% {
+        scale: 1;
+    }
+}
+.donating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.paypal {
+    width: 300px;
+    margin-bottom: 25px;
+    transition: 0.5s;
+    border: 2px solid rgb(102, 46, 224);
+    padding: 15px 15px;
+}
+.paypal:hover {
+    scale: 1.25;
+    transition: 0.5s;
+}
+.wells-fargo {
+    width: 200px;
+    margin: 25px;
+}
+.wachovia {
+    width: 200px;
+    margin: 25px;
+}
+.banks{
+    display: flex;
+    margin: 25px;
+    border: 2px solid rgb(102, 46, 224);
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 200px;
+    padding: 10px 10px;
+    text-align: center;
+}
+.banks h1 {
+    font-size: 20px;
+    font-family: sans-serif;
+    color: rgb(102, 46, 224);
+}
+.banks p {
+    font-size: 15px;
+    font-family: serif;
+    color: rgb(102, 46, 224);
+}
+.accountNumber {
+    text-align: center;
+    margin: 25px;
+}
+.events {
+    min-height: 400px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.844),rgba(255, 255, 255, 0.832)), url(images/community.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.events h1 {
+    font-family: sans-serif;
+    color: rgb(102, 46, 224);
+    font-size: 50px;
+}
+.sponsors {
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.sponsors img {
+    width: 200px;
+    margin: 10px;
+    transition: 0.5s;
+}
+.sponsors img:hover {
+    scale: 1.1;
+    transition: 0.5s;
+}
+.sponsors2 {
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.sponsors2 img {
+    width: 200px;
+    margin: 10px;
+}
+.pressed {
+    min-height: 400px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.844),rgba(255, 255, 255, 0.832)), url(images/pressed.webp);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pressed h1 {
+    font-family: sans-serif;
+    color: rgb(102, 46, 224);
+    font-size: 50px;
+}
+.swiper {
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.kit .explain {
+    justify-content: center;
+    .cancerinfo {
+        text-align: center;
+    }
+}
+.shelf {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+    background-color: rgb(102, 46, 224);
+}
+.shelf li {
+    display: inline-block;
+    padding: 24px 24px;
+    cursor: pointer;
+    border: 2px solid rgb(255, 255, 255);
+    margin: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.shelf li:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(102, 46, 224);
+    transition: 0.5s;
+}
+.active {
+    font-weight: bolder;
+}
+.entireKit {
+    display: none;
+}
+.openKit{
+    border: 2px solid rgb(102, 46, 224);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 24px;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin: auto;
+}
+.openKit:hover {
+    background-color: rgb(102, 46, 224);
+    transition: 0.5s;
+    .aboutTitle {
+        color: white;
+        transition: 0.5s;
+    }
+}
+.swiper-slide .explain {
+    display: flex;
+    flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    .cancerinfo {
+        text-align: center;
+        margin: 25px;
+        width: 300px;
+        height: 300px;
+    }
+}
+.swiper {
+    .swiper-button-next, .swiper-button-prev{
+        color: rgb(102, 46, 224);
+    }
+}
+@media (max-width:600px) {
+    .swiper-slide .explain .cancerinfo {
+        border: 0px;
+    }
+    .swiper .swiper-button-next, .swiper .swiper-button-prev {
+        display: none;
+    }
+}
+.swiper .swiper-pagination-bullet-active {
+    background: rgb(102, 46, 224);
+}
+html {
+    scroll-behavior: smooth;
+}
+.cancerinfo .bio1 {
+    width: 300px;
+}
+.cancerinfo .bio2 {
+    width: 250px;
+}
+.cancerinfo .booth1 {
+    width: 300px;
+    height: 150px;
+}
+.cancerinfo .download1 {
+    color: rgb(102, 46, 224);
+    font-size: 30px;
+    border: 2px solid rgb(102, 46, 224);
+    padding: 25px 25px;
+    text-decoration: none;
+    font-family: sans-serif;
+    transition: 0.5s;
+}
+.cancerinfo .download1:hover {
+    color: white;
+    background-color: rgb(102, 46, 224);
+    transition: 0.5s;
+}
+.entireKit .footer {
+    background-image: linear-gradient(360deg,rgba(102, 46, 224, 0),rgba(121, 87, 194, 0));
+    transform: translateY(-50px);
+}
+.entireKit .socials ul li i, .entireKit .address h1{
+    color: rgb(102, 46, 224);
+}
+.media-row {
+    display: flex;
+    justify-content: center;
+}
+.media-img0 {
+    width: 300px;
+    height: 300px;
+    margin: 25px;
+}
+.media-img1 {
+    width: 300px;
+    height: 200px;
+    margin: 25px;
+}
+.media-img2 {
+    width: 300px;
+    height: 200px;
+    margin: 25px;
+}
+.media-img3 {
+    width: 300px;
+    height: 200px;
+    margin: 25px;
+}
+.media-img4 {
+    width: 300px;
+    height: 200px;
+    margin: 25px;
+}
+.media-row i {
+    margin: 5px;
+    cursor: pointer;
+    color: rgb(102, 46, 224);
+}
+@media (max-width:1100px) {
+    .accountNumber h1 {
+        font-size: 15px;
+    }
+    .sponsors {
+        scale: 0.8
+    }
+    .sponsors2 {
+        scale: 0.8;
+    }
+    .shelf li{
+        display: block;
+        text-align: center;
+    }
+    .media-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cancerinfo .bio2 {
+        width: 150px;
+        height: 200px;
+    }
+    .cancerinfo .bio1 {
+        width : 200px;
+        height: 200px;
+    }
+    .cancerinfo .booth1, .cancerinfo .booth2 {
+        width: 200px;
+        height: 100px;
+    }
+    .explain img, .explain2 img {
+        width: 200px;
+        height: 200px;
+    }
+    .form {
+        flex-direction: column;
+    }
+}
+.volunteering {
+         min-height: 400px;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.844),rgba(255, 255, 255, 0.832)), url(images/volunteerwork.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+.volunteering h1 {
+    font-family: sans-serif;
+    color: rgb(102, 46, 224);
+    font-size: 50px;
+}
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    border: 0px solid rgb(102, 46, 224);
+    background-color: rgb(102, 46, 224);
+}
+.personalInfo {
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    margin: 25px;
+}
+.personalInfo h1 {
+    font-family: sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+.personalInfo p {
+    font-size: 20px;
+    font-weight: 500;
+}
+.input1 {
+    border: 0px solid rgb(102, 46, 224);
+    padding: 10px 10px;
+    color: rgb(102, 46, 224);
+    font-size: 15px;
+    margin-top: 5px;
+}
+textarea {
+    resize: none;
+}
+.submitForm {
+    border: 2px solid rgb(255, 255, 255);
+    padding: 10px 10px;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    font-size: 25px;
+    transition: 0.5s;
+    background-color: rgb(102, 46, 224);
+    cursor: pointer;
+}
+.submitForm:hover {
+    letter-spacing: 5px;
+    transition: 0.5s;
+    background-color: white;
+    color: rgb(102, 46, 224);
+}
+::placeholder {
+    color: rgb(102, 46, 224);
+    opacity: 50%;
+}
+.finalDecision {
+    text-align: center;
+}
+.personalInfo .getCentered {
+    text-align: center;
+}
+.input2 {
+    scale: 1.5;
+    margin-left: 5px;
+}
+.personalInfo a:hover {
+    color: rgba(220, 13, 154, 0.81);
+}
+.personalInfo a {
+    color: white;
+}
+.thanksBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.thanks {
+    text-align: center;
+    font-size: 30px;
+    font-family: serif;
+    color: rgb(102, 46, 224);
+    text-decoration: none;
+    border: 2px solid rgb(102, 46, 224);
+    padding: 12px 34px;
+    background: transparent;
+    transition: 0.5s;
+}
+.thanks:hover {
+    background-color: rgb(102, 46, 224);
+    color: white;
+    transition: 0.5s;
+}
+@keyframes headerEffect {
+    0% {
+        opacity: 0;
+        scale: 0.75;
+    }
+    100% {
+        opacity: 100;
+        scale: 1;
+    }
+}
+@media(max-width: 1100px) {
+    .mission h1, .vision h1, .history h1 {
+        font-size: 20px;
+    }
+    .mission p, .vision p, .history p {
+        font-size: 15px;
+    }
+    .aboutTitle {
+        font-size: 30px;
+    }
+    .yanira h1, .network h1{
+        font-size: 15px;
+    }
+    .yanira img {
+        width: 200px;
+    }
+    .CEO-IMG, .CFO-IMG, .EXEC-IMG, .CEO-NAME, .CFO-NAME, .EXEC-NAME {
+        height: 150px;
+        width: 150px;
+    }
+    .CEO-NAME h1, .CFO-NAME h1, .EXEC-NAME h1 {
+        font-size: 20px;
+    }
+    .CEO-NAME p, .CFO-NAME p, .EXEC-NAME p {
+        font-size: 15px;
+    }
+    .legal div {
+        width: 150px;
+    }
+    .eligibility {
+        font-size: 200px;
+    }
+    .cancerinfo h1 {
+        font-size: 20px;
+    }
+    .cancerinfo p {
+        font-size: 15px;
+    }
+    .paypal {
+        width: 150px;
+    }
+    .wells-fargo {
+        width: 100px;
+    }
+    .wachovia {
+        width: 180px;
+    }
+}

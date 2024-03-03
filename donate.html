@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate</title>
+    <link rel = "stylesheet" href = "details.css">
+    <meta property="og:image" content="images/iconLogo1.jpeg">
+    <meta property = "og:description" content = "Financial Relief For Stomach Cancer Patients/Caregivers">
+    <link rel = "icon" href = "images/scrnMetaLogo2.jpeg">
+    <script src="https://kit.fontawesome.com/d6414831a3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class = "nav">
+        <a href = "index.html"><img src = "images/scrnLogo.gif"></a>
+        <div class = "links" id = "links">
+            <i class = "fa fa-times" onClick = "hideMenu()"></i>
+            <ul>
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "about.html">About Us</a></li>
+                <li><a href = "grants.html">Grants</a></li>
+                <li><a href = "resources.html">Resources</a></li>
+                <li><a href = "events.html">Events</a></li>
+                <li><a href = "pressRoom.html">Press Room</a></li>
+                <li><a href = "contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <i class = "fa fa-bars" onClick = "showMenu()"></i>
+    </div>
+
+    <script>
+        var navLinks = document.getElementById("links");
+        var heart = document.getElementsByClassName("fa-heart");
+    
+        function showMenu() {
+            navLinks.style.right = "0px";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+
+
+
+
+
+    <section class = "donateTitle">
+        <h1>Donate</h1> <br>
+        <i class = "fa fa-heart"></i>
+    </section>
+    
+    <h1 class = "aboutTitle">Ways To Donate</h1>
+
+    <div class = "donating">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"> <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="8BQP9YENR7VTE">
+            <input type="image" src="images/paypal.png" class = "paypal">
+            <img alt="" src="https://www.paypal.com/en_US/i/scr/pixel.gif">
+        </form>
+            
+    </div>
+
+    <div class = "banks">
+        <img src = "images/wells fargo.png" class = "wells-fargo">
+        <div class = "accountNumber">
+            <h1>Account Number: 5 0 5 3 4 7 4 1 7 6</h1><br><br>
+            <p>Please feel free to make a donation with our account number at any Wells Fargo or Wachovia Banks!</p>
+        </div>
+        <img src = "images/wachovia.png" class = wachovia>
+    </div>
+
+    <h1 class = "aboutTitle">Why Should I Donate?</h1>
+
+    <div class = "explain">
+        <div class = cancerinfo>
+            <h1>Think About It</h1><br>
+            <p>If YOU were diagnosed with stomach cancer or any disease, and YOU had to stop working, who would help YOU with your finances??? Having health insurance is great, but it does not cover paying for your bills like your mortgage, rent, utilities, food, transportation, etc. More than likely, YOU will have to turn to YOUR family, friends, co-workers, and the kindness of strangers. Some people will not be able to rely on 1 or more of those options for various reasons, and be forced to rely solely on the kindness of strangers.</p>
+        </div>
+    </div>
+    <div class = "explain">
+        <div class = cancerinfo>
+            <h1>People Helping People</h1><br>
+            <p>When we are healthy and working, we don't think much about someone giving us one hundred dollars to help out on our personal expenses when we owe thousands of dollars each month. But when we lose our health and the ability to work, getting that same one hundred dollars now makes a huge difference in our lives.</p>
+        </div>
+    </div>
+    <div class = "explain">
+        <div class = cancerinfo>
+            <h1>The Human Condition</h1><br>
+            <p>We passionately believe in the good that lies within all of us and the great kindness of charity that the human condition embraces in each of us. Remember if you help just one person, you will have helped many because that person will go on and help others. Thank You!</p>
+        </div>
+    </div>
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class = "footer">
+    <div class = "socials">
+        <h1>Contact Us</h1>
+        <ul>
+            <a href = "mailto:info@scrnet.org" target = "_blank"><li><i class="fa fa-envelope"></i></li></a>
+            <a href = "https://twitter.com/SCRNET_ORG"target = "_blank"><li><i class="fa fa-twitter"></i></li></a>
+            <a href = "https://www.facebook.com/scrnetorg/?v=info"target = "_blank"><li><i class="fa fa-facebook-official"></i></li></a>
+            <a href = "https://www.youtube.com/user/StomachCancerRN"target = "_blank"><li><i class = "fa fa-youtube-play"></i></li></a>
+        </ul>
+    </div>
+    <div class = "address">
+        <h1>PO BOX 33898<br> Las Vegas, NV 89133-3898 <br>Office: 702.292.8547 <br>Fax: 702.658.7437</h1>
+    </div>
+    <div class = "terms">
+        <h1>Stomach Cancer Relief Network Inc. © 2023 <br> <a href = "privacy.html" >Privacy Policy</a> • <a href = "terms.html" >Terms Of Use</a></h1>
+        <h1>Website Designed By <a href = "https://kingnoahx07.github.io/">Noah Mitchell</a></h1>
+    </div>
+</section>
+
+
+</body>
+</html>
